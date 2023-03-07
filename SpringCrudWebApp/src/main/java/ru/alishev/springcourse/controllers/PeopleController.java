@@ -1,19 +1,21 @@
 package ru.alishev.springcourse.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ru.alishev.springcourse.People.Person;
-import ru.alishev.springcourse.People.PersonDAO;
+import ru.alishev.springcourse.models.Person;
+import ru.alishev.springcourse.dao.PersonDAO;
 
 @Controller
 @RequestMapping("/people")
 public class PeopleController {
+
     private final PersonDAO personDAO;
 
     @Autowired
-    PeopleController(PersonDAO personDAO) {
+    public PeopleController(@Qualifier("personDAO")PersonDAO personDAO) {
         this.personDAO = personDAO;
     }
 

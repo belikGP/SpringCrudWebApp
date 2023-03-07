@@ -2,9 +2,9 @@ package ru.alishev.springcourse.config;
 
 import org.springframework.web.filter.HiddenHttpMethodFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
+
 
 
 public class MySpringMvcDispatcherSerlvetIntitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
@@ -33,4 +33,5 @@ public class MySpringMvcDispatcherSerlvetIntitializer extends AbstractAnnotation
         aContext.addFilter("hiddenHttpMethodFilter",
                 new HiddenHttpMethodFilter()).addMappingForUrlPatterns(null ,true, "/*");
     }
+
 }
