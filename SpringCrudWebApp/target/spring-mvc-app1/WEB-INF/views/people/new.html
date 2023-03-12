@@ -6,27 +6,32 @@
 </head>
 <body>
 
-<form method="post" action="/people">
+<form th:method="POST" th:action="@{/people}" th:object="${person}">
 
     <label for="name">Name</label>
-    <input name="name" type="text" id="name"/>
+    <input th:field="${person.name}" type="text" id="name"/>
+    <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</div>
     <br>
     <label for="age">Age</label>
-    <input name="age" type="text" id="age"/>
+    <input th:field="${person.age}" type="text" id="age"/>
+    <div th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</div>
     <br>
     <label for="email">Email</label>
-    <input name="email" type="text" id="email"/>
+    <input th:field="${person.email}" type="text" id="email"/>
+    <div th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</div>
     <br>
     <label>Sex</label>
     <br>
-    <input type="radio" name="gender" id="male" value="true" th:checked="${person.gender == true}"/>
+    <input type="radio" th:field="${person.gender}" id="male" value="true"/>
     <label for="male">Male</label>
     <br>
-    <input type="radio" name="gender" id="female" value="false" th:checked="${person.gender == false}"/>
+    <input type="radio" th:field="${person.gender}" id="female" value="false"/>
     <label for="female">Female</label>
     <br>
     <input type="submit" value="Add">
-</form>
+    <br>
 
+</form>
+<a href="javascript:history.back()">Back</a>
 </body>
 </html>

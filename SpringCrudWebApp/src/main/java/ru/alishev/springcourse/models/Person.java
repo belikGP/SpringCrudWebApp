@@ -1,9 +1,19 @@
 package ru.alishev.springcourse.models;
+
+import javax.validation.constraints.*;
+
 public class Person {
 
+    @NotEmpty(message = "Enter the name")
+    @Size(min=4, max=20, message="Name should be between 4 and 20 characters")
     private String name;
+
+    @Email(message = "Enter the correct email")
     private String email;
     private boolean gender;
+
+    @Min(value = 16, message = "You should be over 16")
+    @Max(value = 99, message = "Enter the correct age")
     private int age;
     private int id;
     public Person(){};
