@@ -1,4 +1,4 @@
-package ru.alishev.springcourse.models;
+package SpringApp.models;
 
 import javax.validation.constraints.*;
 

@@ -1,10 +1,8 @@
-package ru.alishev.springcourse.dao;
-
+package SpringApp.dao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
-import ru.alishev.springcourse.models.Person;
-
+import SpringApp.models.Person;
 import java.util.List;
 
 @Component

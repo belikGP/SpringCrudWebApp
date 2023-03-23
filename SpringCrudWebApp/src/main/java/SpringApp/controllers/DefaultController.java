@@ -1,4 +1,4 @@
-package ru.alishev.springcourse.controllers;
+package SpringApp.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

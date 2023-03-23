@@ -1,4 +1,4 @@
-package ru.alishev.springcourse.controllers;
+package SpringApp.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -6,8 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import ru.alishev.springcourse.models.Person;
-import ru.alishev.springcourse.dao.PersonDAO;
+import SpringApp.models.Person;
+import SpringApp.dao.PersonDAO;
 
 import javax.validation.Valid;
 

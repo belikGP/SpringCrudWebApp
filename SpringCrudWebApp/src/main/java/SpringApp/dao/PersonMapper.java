@@ -1,7 +1,6 @@
-package ru.alishev.springcourse.dao;
-
+package SpringApp.dao;
 import org.springframework.jdbc.core.RowMapper;
-import ru.alishev.springcourse.models.Person;
+import SpringApp.models.Person;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
