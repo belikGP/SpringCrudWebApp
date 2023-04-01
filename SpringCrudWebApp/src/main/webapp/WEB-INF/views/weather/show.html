@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Page</title>
+</head>
+<body>
+<h1 th:text="'Weather in ' + ${cityName}"></h1>
+<p>Temperature: <span th:text="${temperature - 273}"></span>°C</p>
+<p>Condition: <span th:text="${condition}"></span></p>
+<p>Pressure: <span th:text="${pressure}"></span></p>
+<a href="javascript:history.back()">Back</a>
+</body>
+</html>
