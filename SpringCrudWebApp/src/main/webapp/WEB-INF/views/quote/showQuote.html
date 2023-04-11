@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Quote</title>
+</head>
+<body>
+<p th:text="${quote}"></p>
+<br>
+<h1 th:text="${quoteAuthor}"></h1>
+<hr/>
+<a th:href="@{/quote}">newQuote</a>
+<br>
+<a href="javascript:history.back()">Back</a>
+</body>
+</html>
