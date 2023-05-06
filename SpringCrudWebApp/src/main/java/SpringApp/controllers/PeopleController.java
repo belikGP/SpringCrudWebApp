@@ -8,8 +8,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import SpringApp.models.Person;
 import SpringApp.dao.PersonDAO;
-
 import javax.validation.Valid;
+
 
 @Controller
 @RequestMapping("/people")

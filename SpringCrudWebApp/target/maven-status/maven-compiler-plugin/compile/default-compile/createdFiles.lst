@@ -1,11 +1,13 @@
 SpringApp\models\Person.class
 SpringApp\controllers\PeopleController.class
-SpringApp\dao\PersonMapper.class
 SpringApp\config\SpringConfig.class
 SpringApp\config\MySpringInitializer.class
 SpringApp\models\OpenWeatherMapAPI.class
 SpringApp\controllers\FirstController.class
 SpringApp\controllers\WeatherController.class
-SpringApp\dao\PersonDAO.class
 SpringApp\controllers\SecondController.class
+SpringApp\dao\PersonMapper.class
+SpringApp\models\QuotesAPI.class
+SpringApp\controllers\QuoteController.class
+SpringApp\dao\PersonDAO.class
 SpringApp\controllers\DefaultController.class

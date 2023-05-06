@@ -1,7 +1,6 @@
 package SpringApp.models;
 
 import javax.validation.constraints.*;
-
 public class Person {
 
     @NotEmpty(message = "Enter the name")
